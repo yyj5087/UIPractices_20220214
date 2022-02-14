@@ -101,6 +101,11 @@
         android:layout_height="wrap_content"
         android:text="개인정보 이용에 동의합니다." />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -110,9 +115,11 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:backgroundTint="#0000FF"
             android:text="이전으로"/>
         <Button
             android:text="가입하기"
+            android:backgroundTint="#FF0000"
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="wrap_content"/>
