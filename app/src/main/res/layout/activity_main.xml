@@ -7,81 +7,99 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/nepplus_logo01"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/nepplus_logo01" />
+
+    </LinearLayout>
 
 
     <TextView
-        android:text="아이디"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="아이디" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="이메일 양식으로 입력"
-        android:textSize="12sp"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        android:textSize="12sp" />
 
     <TextView
-        android:text="비밀번호"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="비밀번호" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
         android:hint="비밀번호 입력"
-        android:textSize="12sp"/>
+        android:inputType="textPassword"
+        android:textSize="12sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="닉네임"/>
+        android:text="닉네임" />
+
     <EditText
-        android:hint="사용할 닉네임 입력 (한글 가능)"
-        android:textSize="12sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="사용할 닉네임 입력 (한글 가능)"
         android:imeOptions="actionSearch"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:textSize="12sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="성별"/>
+        android:text="성별" />
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="남성"/>
+            android:text="남성" />
+
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="여성"/>
+            android:text="여성" />
+
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="공개 안함"/>
+            android:text="공개 안함" />
 
     </RadioGroup>
+
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="true"
-        android:text="이용 약관에 동의합니다."/>
+        android:text="이용 약관에 동의합니다." />
+
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="개인정보 이용에 동의합니다."/>
+        android:text="개인정보 이용에 동의합니다." />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="sign up"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false" />
 
 </LinearLayout>
