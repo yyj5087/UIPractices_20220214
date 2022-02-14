@@ -11,10 +11,13 @@
     <TextView
         android:text="아이디"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="이메일 양식으로 입력"
+        android:textSize="12sp"
+        android:inputType="textEmailAddress"/>
 
     <TextView
         android:text="비밀번호"
@@ -22,6 +25,21 @@
         android:layout_height="wrap_content"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="비밀번호 입력"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임"/>
+    <EditText
+        android:hint="사용할 닉네임 입력 (한글 가능)"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"/>
 
 </LinearLayout>
