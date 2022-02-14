@@ -83,7 +83,10 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="공개 안함" />
+            android:text="공개 안함"
+            android:enabled="false"
+            android:visibility="gone"
+            tools:visibility="visible"/>
 
     </RadioGroup>
 
@@ -102,6 +105,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="sign up"
+        android:backgroundTint="#FF0000"
         android:textAllCaps="false" />
 
 </LinearLayout>
